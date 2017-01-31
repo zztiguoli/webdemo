@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>cn.edu.zzti.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PersonalInfoView</servlet-name>
+    <servlet-class>cn.edu.zzti.servlet.view.PersonalInfoView</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>IndexView</servlet-name>
+    <servlet-class>cn.edu.zzti.servlet.view.IndexView</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PersonalPage1</servlet-name>
+    <servlet-class>cn.edu.zzti.servlet.view.PersonalPage1</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PersonalPage2</servlet-name>
+    <servlet-class>cn.edu.zzti.servlet.view.PersonalPage2</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LoginPageView</servlet-name>
+    <servlet-class>cn.edu.zzti.servlet.view.LoginPageView</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PersonalInfoProcess</servlet-name>
+    <servlet-class>cn.edu.zzti.servlet.PersonalInfoProcess</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/servlet/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PersonalInfoView</servlet-name>
+    <url-pattern>/servlet/PersonalInfoView</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>IndexView</servlet-name>
+    <url-pattern>/servlet/IndexView</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PersonalPage1</servlet-name>
+    <url-pattern>/servlet/PersonalPage1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PersonalPage2</servlet-name>
+    <url-pattern>/servlet/PersonalPage2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginPageView</servlet-name>
+    <url-pattern>/servlet/LoginPageView</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PersonalInfoProcess</servlet-name>
+    <url-pattern>/servlet/PersonalInfoProcess</url-pattern>
+  </servlet-mapping>	
+  <welcome-file-list>
+    <welcome-file>/servlet/LoginPageView</welcome-file>
+  </welcome-file-list>
+</web-app>

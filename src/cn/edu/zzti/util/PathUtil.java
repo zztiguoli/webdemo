@@ -1,0 +1,13 @@
+package cn.edu.zzti.util;
+
+import javax.servlet.http.HttpServletRequest;
+
+public class PathUtil {
+	public static String getBasePath(HttpServletRequest request) {
+		String path = request.getContextPath();
+		String basePath = request.getScheme() + "://" + request.getServerName()
+				+ ":" + request.getServerPort() + path + "/";
+		return basePath;
+	}
+
+}
